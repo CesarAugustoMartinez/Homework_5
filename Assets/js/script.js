@@ -12,11 +12,10 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem(hour,data);  
 });
 
-
 });
 
 function updateRowTime(){
-    var currentHour = 16; //moment().hour();
+    var currentHour = 12; //moment().hour();
 
     console.log(currentHour);
 
