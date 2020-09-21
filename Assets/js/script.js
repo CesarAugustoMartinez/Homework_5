@@ -3,25 +3,20 @@ $("#currentDay").text(moment().format('dddd , LL')); // Getting the current date
 
 $(document).ready(function(){
 
-// Calling funtions    
+// Calling functions    
 updateRowTime(); 
 loadData();
 $(".saveBtn").on("click", function(){ // Storing data into localStorage
     var data = $(this).siblings(".description").val();
     var hour = $(this).parents(".time-block").attr("id").split("-")[1];
     localStorage.setItem(hour,data);  
-});
-
+    });
 });
 
 function updateRowTime(){ // Changing style according to the current time
     var currentHour = moment().hour(); // Getting the current hour using moment.js library
-
-    console.log(currentHour);
-
     $(".time-block").each(function(){
         var rowHour = parseInt($(this).attr("id").split("-")[1]);
-        console.log(rowHour);  
         if (rowHour < currentHour) {
             $(this).addClass("past");
         } else if (rowHour === currentHour) {
