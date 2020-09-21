@@ -1,12 +1,12 @@
 
-$("#currentDay").text(moment().format('dddd , LL'));
+$("#currentDay").text(moment().format('dddd , LL')); // Getting the current date using moment.js library
 
 $(document).ready(function(){
 
-updateRowTime();
-updateData();
-
-$(".saveBtn").on("click", function(){
+// Calling funtions    
+updateRowTime(); 
+loadData();
+$(".saveBtn").on("click", function(){ // Storing data into localStorage
     var data = $(this).siblings(".description").val();
     var hour = $(this).parents(".time-block").attr("id").split("-")[1];
     localStorage.setItem(hour,data);  
@@ -14,8 +14,8 @@ $(".saveBtn").on("click", function(){
 
 });
 
-function updateRowTime(){
-    var currentHour = 12; //moment().hour();
+function updateRowTime(){ // Changing style according to the current time
+    var currentHour = moment().hour(); // Getting the current hour using moment.js library
 
     console.log(currentHour);
 
@@ -34,11 +34,10 @@ function updateRowTime(){
 
 };
 
-function updateData() {
+function loadData() { // Loading data from the localStorage to each hour.
     $(".time-block").each(function(){
         var rowHour = parseInt($(this).attr("id").split("-")[1]);
         $(this).children(".description").val(localStorage.getItem(rowHour));
-        
     });
 };
 
