@@ -14,7 +14,7 @@ $(".saveBtn").on("click", function(){ // Storing data into localStorage
 });
 
 function updateRowTime(){ // Changing style according to the current time
-    var currentHour = 12; //moment().hour(); // Getting the current hour using moment.js library
+    var currentHour = moment().hour(); // Getting the current hour using moment.js library
     $(".time-block").each(function(){
         var rowHour = parseInt($(this).attr("id").split("-")[1]);
         if (rowHour < currentHour) {
