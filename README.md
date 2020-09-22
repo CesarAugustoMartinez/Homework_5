@@ -83,7 +83,7 @@ This web application has a page index.html with timeblocks for standard business
 
 - Time Blocks
 
-![picture](Assets/images/timeBlocks.png)
+![picture](Assets/images/timeblock.png)
 
 - Save Button 
 
