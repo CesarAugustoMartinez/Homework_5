@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-![picture](assets/images/workDayScheduler.png)
+![picture](Assets/images/workDayScheduler.png)
 
 Link : [Project Link](https://cesaraugustomartinez.github.io/Homework_5/Develop/)
 
@@ -83,15 +83,15 @@ This web application has a page index.html with timeblocks for standard business
 
 - Time Blocks
 
-![picture](assets/images/timeBlocks.png)
+![picture](Assets/images/timeBlocks.png)
 
 - Save Button 
 
-![picture](assets/images/saveButton.png)
+![picture](Assets/images/saveButton.png)
 
 - LocalStorage
 
-![picture](assets/images/localStorage.png)
+![picture](Assets/images/localStorage.png)
 
 
 [Back To The Top](#Work-Day-Scheduler)
