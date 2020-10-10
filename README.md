@@ -2,7 +2,7 @@
 
 ![picture](Assets/images/workDayScheduler.png)
 
-Link : [Project Link](https://cesaraugustomartinez.github.io/Homework_5/Develop/)
+Link : [Project Link](https://cesaraugustomartinez.github.io/Work_Day_Scheduler/Develop/)
 
 ---
 
